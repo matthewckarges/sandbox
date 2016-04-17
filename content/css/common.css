@@ -9,6 +9,11 @@
 	height: 100%;
 	vertical-align: top;
 }
-	.fingerprint-info span{
-		
+	.fingerprint-info label{
+		font-style: bold;
+	}
+	
+	.fingerprint-info label:after{
+		content: '\A';
+		display: block;
 	}
