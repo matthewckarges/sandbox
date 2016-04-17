@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <!--<link rel="stylesheet" type="text/css" href="/sandbox/content/bootstrap/css/bootstrap.min.css" />-->
+<link rel="stylesheet" type="text/css" href="/sandbox/content/css/common.css" />
 </head>
 <body>
 <div class="container">
@@ -102,7 +103,7 @@
 					$list.append('' +
 						'<div class="slideWrapper">' +
 							'<a href="#" class="slideLink">' +
-								'<img src="' + item.FingerPrintUrl + '" alt="' + item.Name + '">' +
+								'<img class="fingerprint-image" src="' + item.FingerPrintUrl + '" alt="' + item.Name + '">' +
 							'</a>' +
 						'</div>'
 					);
@@ -119,7 +120,7 @@
 				momentumScrolling: true,
 				elementPadding: 1,
 				slideMaxHeight: 410,
-				slideMaxWidth: 300
+				slideMaxWidth: 500
 			});
 			
 			
