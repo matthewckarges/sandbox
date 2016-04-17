@@ -1,33 +1,4 @@
 ﻿
-var bannerCarousel;
-$(document).ready(function () {
-    if ($(".carouselWindow").length > 0) {
-        $(".carouselWindow").carouselify({
-            addDots: true,
-            loop: true,
-            settling: true,
-            overScrolling: true,
-            autoScroll: false,
-            autoScrollInterval: 6000,
-            momentumScrolling: true,
-            //slideMaxHeight: parseFloat($(".carouseWrapper").attr("data-height")),
-            //slideMaxWidth: parseFloat($(".carouseWrapper").attr("data-width"))
-        });
-    }
-});
-
-$(document).on("click", ".bannerModalTrigger", function(e) {
-    e.preventDefault();
-    
-    var button = $(this);
-
-    PreventDoubleClick(function () {
-        var contentUrl = button.attr("data-url");
-        var title = button.attr("data-title");
-        modal.LoadUrl(contentUrl, title);
-    });
-});
-
 $.fn.carouselify = function (options) {
     if (this.length == 0) return undefined;
     var settings = $.extend({
