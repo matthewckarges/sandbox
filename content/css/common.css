@@ -1,7 +1,9 @@
 .fingerprint-image {
 	width: 50%;	
+	display: inline-block;
 }
 
 .fingerprint-info {
 	width: 50%;
+	display: inline-block;
 }
