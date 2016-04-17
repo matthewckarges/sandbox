@@ -73,7 +73,6 @@ $.fn.carouselify = function (options) {
     var banners = [];
     this.find(settings.elementSelector).each(function (i) {
         var banner = $(this);
-		banner.css("display", "inline-block");
 	    var bannerObject = {
 		    Banner: banner,
 		    Width: function() {
@@ -88,6 +87,8 @@ $.fn.carouselify = function (options) {
 		    Dot: $(".carouselControl[data-id=" +i + "]"),
 		    DotWrapper: $(".carouselControl[data-id=" +i + "]").parent("li")
 		};
+		banner.css("display", "inline-block");
+		banner.Wrapper.css("display", "inline-block");
         banners.push(bannerObject);
     });
 	var carousel = {
