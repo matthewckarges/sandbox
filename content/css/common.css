@@ -6,4 +6,9 @@
 .fingerprint-info {
 	width: 50%;
 	display: inline-block;
+	height: 100%;
+	vertical-align: top;
 }
+	.fingerprint-info span{
+		
+	}

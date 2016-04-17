@@ -52,47 +52,58 @@
 			var items = [
 				{
 					FingerPrintUrl: '/sandbox/content/images/Andrew.Prof Plum.Fingerprint.png',
-					Name: 'Professor Plum'
+					Name: 'Professor Plum',
+					Profession: 'Professor'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Anna.Ms.Peach.Fingerprint.png',
-					Name: 'Ms. Peach'
+					Name: 'Ms. Peach',
+					Profession: 'Baker'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Diana.Mrs. White.Fingerprint.png',
-					Name: 'Mrs. White'
+					Name: 'Mrs. White',
+					Profession: 'Teacher'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Kendra.Madam Rose.Fingerprint2.png',
-					Name: 'Madam Rose'
+					Name: 'Madam Rose',
+					Profession: 'Palm Reader'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Lexi.Miss Scarlett.Fingerprint.png',
-					Name: 'Miss Scarlett'
+					Name: 'Miss Scarlett',
+					Profession: 'Dentist'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Matt.Mons Brun.Fingerprint2.png',
-					Name: 'Monseur Brunette'
+					Name: 'Monseur Brunette',
+					Profession: 'Plumber'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Morgan.Mrs.Peacock.Fingerprint.png',
-					Name: 'Mrs. Peacock'
+					Name: 'Mrs. Peacock',
+					Profession: 'Doctor'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Nathan.Colonel Mustard.Fingerprint.png',
-					Name: 'Colonel Mustard'
+					Name: 'Colonel Mustard',
+					Profession: 'Homeless'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Rae.LadyLavendar.Fingerprint.png',
-					Name: 'Lady Lavendar'
+					Name: 'Lady Lavendar',
+					Profession: 'something...'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Russell.Mr. Green.Fingerprint2.png',
-					Name: 'Mr. Green'
+					Name: 'Mr. Green',
+					Profession: 'Realtor'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Sunny.Mrs.Body.FingerPrint.png',
-					Name: 'Mrs. Body'
+					Name: 'Mrs. Body',
+					Profession: 'Trust child'
 				},
 			];
 		
@@ -105,7 +116,11 @@
 							'<div class="slideLink">' +
 								'<img class="fingerprint-image" src="' + item.FingerPrintUrl + '" alt="' + item.Name + '">' +
 								'<div class="fingerprint-info">' +
+									'<label>Name:</label>' +
 									'<span>' + item.Name + '</span>' +
+									'<br/>' + 
+									'<label>Profession</label>' +
+									'<span>' + item.Profession + '</span>' +
 								'</div>' +
 							'</div>' +
 						'</div>'
