@@ -7,11 +7,11 @@ $(document).ready(function () {
             loop: true,
             settling: true,
             overScrolling: true,
-            autoScroll: true,
+            autoScroll: false,
             autoScrollInterval: 6000,
             momentumScrolling: true,
-            slideMaxHeight: parseFloat($(".carouseWrapper").attr("data-height")),
-            slideMaxWidth: parseFloat($(".carouseWrapper").attr("data-width"))
+            //slideMaxHeight: parseFloat($(".carouseWrapper").attr("data-height")),
+            //slideMaxWidth: parseFloat($(".carouseWrapper").attr("data-width"))
         });
     }
 });
