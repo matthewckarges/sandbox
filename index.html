@@ -4,8 +4,8 @@
 <link rel="stylesheet" type="text/css" href="/sandbox/content/bootstrap/css/bootstrap.min.css" />
 </head>
 <body>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+<div id="carousel-example-generic" class="carousel slide carouselWindow" >
+    <!-- Indicators 
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -19,71 +19,71 @@
         <li data-target="#carousel-example-generic" data-slide-to="9"></li>
         <li data-target="#carousel-example-generic" data-slide-to="10"></li>
         <li data-target="#carousel-example-generic" data-slide-to="11"></li>
-    </ol>
+    </ol>-->
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
+    <div class="carousel-inner carouselList" role="listbox">
+        <div class="item slideWraper active">
             <img src="/sandbox/content/images/Andrew.Prof Plum.Fingerprint.png" alt="Professor Plum">
             <div class="carousel-caption">
                 Professor Plum
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Anna.Ms.Peach.Fingerprint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Diana.Mrs. White.Fingerprint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Kendra.Madam Rose.Fingerprint2.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Lexi.Miss Scarlett.Fingerprint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Matt.Mons Brun.Fingerprint2.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Morgan.Mrs.Peacock.Fingerprint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Nathan.Colonel Mustard.Fingerprint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Rae.LadyLavendar.Fingerprint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Russell.Mr. Green.Fingerprint2.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
             </div>
         </div>
-        <div class="item">
+        <div class="item slideWraper">
             <img src="/sandbox/content/images/Sunny.Mrs.Body.FingerPrint.png" alt="Ms. Peach">
             <div class="carousel-caption">
                 Ms. Peach
@@ -105,13 +105,14 @@
 <script src="/sandbox/content/jQuery/jquery-1.12.3.min.js"></script>
 
 <script src="/sandbox/content/bootstrap/js/bootstrap.min.js"></script>
+<script src="/sandbox/content/scripts/carousel.js"></script>
 <script type="text/javascript">
 
-(function($){
-	$(function(){
-		$('.carousel').carousel();
-	});
-})(jQuery);
+	(function($){
+		$(function(){
+			//$('.carousel').carousel();
+		});
+	})(jQuery);
 
 </script>
 
