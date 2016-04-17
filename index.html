@@ -113,6 +113,16 @@
 				slideMaxHeight: 410,
 				slideMaxWidth: 300
 			});
+			
+			
+			$.ajaxSetup({ cache: true });
+			$.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+				FB.getLoginStatus(function(response) {
+					if (response.status === 'connected') {
+						var accessToken = response.authResponse.accessToken;
+					} 
+				});
+			});
 		});
 	})(jQuery);
 
