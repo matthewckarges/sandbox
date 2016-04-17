@@ -10,7 +10,7 @@
 	vertical-align: top;
 }
 	.fingerprint-info label{
-		font-style: bold;
+		font-weight: bold;
 	}
 	
 	.fingerprint-info label:after{
