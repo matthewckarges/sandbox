@@ -88,7 +88,7 @@ $.fn.carouselify = function (options) {
 		    DotWrapper: $(".carouselControl[data-id=" +i + "]").parent("li")
 		};
 		banner.css("display", "inline-block");
-		banner.Wrapper.css("display", "inline-block");
+		bannerObject.Wrapper.css("display", "inline-block");
         banners.push(bannerObject);
     });
 	var carousel = {
