@@ -42,10 +42,14 @@
 	
 	
 	<div class="itemTemplate" style="display:none">
-		<div class="slideWrapper">
+		<div class="slideWrapper" data-name="{{ item.Name }}">
 			<div class="slideLink">
-				<img class="fingerprint-image" src="{{ item.FingerPrintUrl }}" alt="{{ item.Name }}">
+				<div class="image-wrapper">
+					<img class="fingerprint-image" src="{{ item.FingerPrintUrl }}" alt="{{ item.Name }}">
+				</div>
+				<div class="image-wrapper">
 					<img class="fingerprint-image" src="{{ item.CardUrl }}" alt="{{ item.Name }}" />
+				</div>
 				<!--<div class="fingerprint-info">
 					
 					<label>Name:</label>
