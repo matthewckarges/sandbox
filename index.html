@@ -28,20 +28,6 @@
 			
 		</div>
 
-		<div class="itemTemplate" style="display:none">
-			<div class="slideWrapper">
-				<div class="slideLink">
-					<img class="fingerprint-image" src="{{ item.FingerPrintUrl }}" alt="item.Name">
-					<div class="fingerprint-info">
-						<label>Name:</label>
-						<span>{{ item.Name }}</span>
-						<br/>
-						<label>Profession:</label>
-						<span>{{ item.Profession }}</span>
-					</div>
-				</div>
-			</div>
-		</div>
 		
 		<!-- Controls 
 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -53,6 +39,23 @@
 			<span class="sr-only">Next</span>
 		</a>-->
 	</div>
+	
+	
+	<div class="itemTemplate" style="display:none">
+		<div class="slideWrapper">
+			<div class="slideLink">
+				<img class="fingerprint-image" src="{{ item.FingerPrintUrl }}" alt="{{ item.Name }}">
+				<div class="fingerprint-info">
+					<label>Name:</label>
+					<span>{{ item.Name }}</span>
+					<br/>
+					<label>Profession:</label>
+					<span>{{ item.Profession }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 </div>
 
 <script src="/sandbox/content/jQuery/jquery-1.12.3.min.js"></script>
@@ -184,14 +187,7 @@
 			});
 			
 			
-			$.ajaxSetup({ cache: true });
-			$.getScript('//connect.facebook.net/en_US/sdk.js', function(){
-				FB.getLoginStatus(function(response) {
-					if (response.status === 'connected') {
-						var accessToken = response.authResponse.accessToken;
-					} 
-				});
-			});
+			
 		});
 	})(jQuery);
 
