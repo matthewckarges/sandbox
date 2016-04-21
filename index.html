@@ -146,7 +146,7 @@
 					var item = items[i];
 					var template = $template.html();
 					for(var prop in item){
-						if(item.hasOwnProperty(prop){
+						if(item.hasOwnProperty(prop)){
 							template.replace("{{ item." + prop + " }}", item[prop]);
 						}
 					}
