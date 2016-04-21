@@ -28,6 +28,21 @@
 			
 		</div>
 
+		<div class="itemTemplate" style="display:none">
+			<div class="slideWrapper">
+				<div class="slideLink">
+					<img class="fingerprint-image" src="{{ item.FingerPrintUrl }}" alt="item.Name">
+					<div class="fingerprint-info">
+						<label>Name:</label>
+						<span>{{ item.Name }}</span>
+						<br/>
+						<label>Profession:</label>
+						<span>{{ item.Profession }}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<!-- Controls 
 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -52,70 +67,91 @@
 			var items = [
 				{
 					FingerPrintUrl: '/sandbox/content/images/Andrew.Prof Plum.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Mark.ProfessorPlum.ClueCard.png',
 					Name: 'Professor Plum',
 					Profession: 'Butcher'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Anna.Ms. Peach.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Anna.MsPeach.ClueCard.png',
 					Name: 'Ms. Peach',
 					Profession: 'Baker'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Diana.Mrs. White.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Diana.MrsWhite.ClueCard.png',
 					Name: 'Mrs. White',
 					Profession: 'Teacher'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Kendra.Madam Rose.Fingerprint2.png',
+					CardUrl: '/sandbox/content/images/Kendra.MadameRose.ClueCard.png',
 					Name: 'Madam Rose',
 					Profession: 'Palm Reader'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Lexi.Miss Scarlett.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Lexi.MissScarlet.ClueCard.png',
 					Name: 'Miss Scarlett',
 					Profession: 'Dentist'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Matt.Mons Brun.Fingerprint2.png',
+					CardUrl: '/sandbox/content/images/Matt.MonseurBrunette.ClueCard.png',
 					Name: 'Monseur Brunette',
 					Profession: 'Plumber'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Morgan.Mrs. Peacock.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Morgan.MrsPeacock.ClueCard.png',
 					Name: 'Mrs. Peacock',
 					Profession: 'Doctor'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Nathan.Colonel Mustard.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Nathan.ColonelMustard.ClueCard.png',
 					Name: 'Colonel Mustard',
 					Profession: 'Homeless'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Rae.LadyLavendar.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Rae.LadyLavendar.ClueCard.png',
 					Name: 'Lady Lavendar',
 					Profession: 'Artist'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Russell.Mr. Green.Fingerprint2.png',
+					CardUrl: '/sandbox/content/images/Russell.MrGreen.ClueCard.png',
 					Name: 'Mr. Green',
 					Profession: 'Realtor'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Sunny.Mrs.Body.FingerPrint.png',
+					CardUrl: '/sandbox/content/images/Sunny.MrsBody.ClueCard.png',
 					Name: 'Mrs. Body',
 					Profession: 'Trust child'
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Abby.Mrs. Meadowbrook.Fingerprint.png',
+					CardUrl: '/sandbox/content/images/Abby.MrsMeadowbrook.ClueCard.png',
 					Name: 'Mrs. Meadowbrook',
 					Profession: 'Seamstress'
 				}
 			];
 		
 			var $list = $(".carouselList");
+			var $templage = $(".itemTemplate");
 			for(var i in items){
 				if(items.hasOwnProperty(i)){
 					var item = items[i];
+					var template = $template.html();
+					for(var prop in item){
+						if(item.hasOwnProperty(prop){
+							template.replace("{{ item." + prop + " }}", item[prop]);
+						}
+					}
+					$list.append(template);
+					/*
 					$list.append('' +
 						'<div class="slideWrapper">' +
 							'<div class="slideLink">' +
@@ -130,6 +166,7 @@
 							'</div>' +
 						'</div>'
 					);
+					*/
 				}
 			}
 		
