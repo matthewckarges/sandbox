@@ -147,7 +147,7 @@
 					var template = $template.html();
 					for(var prop in item){
 						if(item.hasOwnProperty(prop)){
-							template.replace("{{ item." + prop + " }}", item[prop]);
+							template = template.replace("{{ item." + prop + " }}", item[prop]);
 						}
 					}
 					$list.append(template);
