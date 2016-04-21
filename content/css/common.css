@@ -10,8 +10,9 @@
 }
 
 .image-wrapper {
-	width: 50%;
+	width: 45%;
 	height: 100%;
+	display: inline-block;
 }
 
 .fingerprint-info {
