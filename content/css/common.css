@@ -2,6 +2,11 @@
 	max-width: 100%;	
 	display: inline-block;
 	max-height: 100%;
+	float: right;
+}
+
+.image-wrapper:nth-child(2) .fingerprint-image{
+	float: left;
 }
 
 .image-wrapper {
