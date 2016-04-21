@@ -1,6 +1,7 @@
 .fingerprint-image {
-	width: 50%;	
+	max-width: 50%;	
 	display: inline-block;
+	max-height: 100%;
 }
 
 .fingerprint-info {

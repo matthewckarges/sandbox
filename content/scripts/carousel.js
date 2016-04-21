@@ -428,10 +428,9 @@ $.fn.carouselify = function (options) {
                 }
             } else {
 
-                var landscapeMaxImageHeight = pageHeight;
+                var landscapeMaxImageHeight = .66 * pageHeight;
 
                 if (landscapeMaxImageHeight > this.SlideMaxHeight) {
-
                     slideHeight = this.SlideMaxHeight;
                     slideWidth = this.SlideMaxWidth;
                 } else {
