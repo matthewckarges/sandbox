@@ -120,7 +120,7 @@
 				},
 				{
 					FingerPrintUrl: '/sandbox/content/images/Rae.LadyLavendar.Fingerprint.png',
-					CardUrl: '/sandbox/content/images/Rae.LadyLavendar.ClueCard.png',
+					CardUrl: '/sandbox/content/images/Rae.LadyLavender.ClueCard.png',
 					Name: 'Lady Lavendar',
 					Profession: 'Artist'
 				},
@@ -152,7 +152,8 @@
 					var template = $template.html();
 					for(var prop in item){
 						if(item.hasOwnProperty(prop)){
-							template = template.replace("{{ item." + prop + " }}", item[prop]);
+							var re = new RegExp("{{ item." + prop + " }}", 'g');
+							template = template.replace(re, item[prop]);
 						}
 					}
 					$list.append(template);
