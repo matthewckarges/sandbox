@@ -3,10 +3,13 @@ body {
 	font-size: 0;
 }
 
+.header-wrapper {
+	width: 100%;
+    text-align: center;
+}
+
 h1 {
-	width: 35%;
-    margin-left: auto;
-    margin-right: auto;
+	display: inline-block;
 	font-size: xx-large;
 }
 
